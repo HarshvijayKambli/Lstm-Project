@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout GitHub repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v6
 
       - name: Sync to Hugging Face Hub
         uses: huggingface/hub-sync@v0.3.0
@@ -21,3 +21,4 @@ jobs:
           huggingface_repo_id: Harshkambli/lsmt-project
           hf_token: ${{ secrets.HF_TOKEN }}
           repo_type: space
+          space_sdk: static
