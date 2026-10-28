@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout GitHub repository
         uses: actions/checkout@v6
 
       - name: Sync to Hugging Face Hub
